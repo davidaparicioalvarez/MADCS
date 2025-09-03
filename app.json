@@ -1,6 +1,6 @@
 {
   "id": "c08fcf97-f2fc-4596-b7a2-ccef262138ca",
-  "name": "MADCS - Manufacturing Automated Data Capture System.",
+  "name": "Manufacturing Automated Data Capture System",
   "publisher": "APAWARE - David Aparicio",
   "version": "1.0.0.0",
   "brief": "MADCS (Manufacturing Automated Data Capture System) is a powerful extension for Microsoft Dynamics 365 Business Central designed to streamline and automate the collection of manufacturing data directly from the shop floor.",
@@ -35,6 +35,6 @@
   "target": "OnPrem",
   "platform": "25.2.0.0",
   "application": "25.10.0.0",
-  "runtime": "14.0",
+  "runtime": "14.3",
   "preprocessorSymbols": [ "CLEAN25" ]
 }

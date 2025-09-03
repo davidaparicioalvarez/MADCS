@@ -1,9 +1,9 @@
 {
     "al.enableCodeAnalysis": true,
     "al.codeAnalyzers": [
-        "CodeCop",
-        "UICop",
-        "PerTenantExtensionCop"
+        "${CodeCop}",
+        "${UICop}",
+        "${analyzerFolder}BusinessCentral.LinterCop.dll"
     ],
     "chat.promptFiles": true
 }
