@@ -1,0 +1,40 @@
+{
+  "id": "c08fcf97-f2fc-4596-b7a2-ccef262138ca",
+  "name": "MADCS - Manufacturing Automated Data Capture System.",
+  "publisher": "APAWARE - David Aparicio",
+  "version": "1.0.0.0",
+  "brief": "MADCS (Manufacturing Automated Data Capture System) is a powerful extension for Microsoft Dynamics 365 Business Central designed to streamline and automate the collection of manufacturing data directly from the shop floor.",
+  "description": "MADCS (Manufacturing Automated Data Capture System) is an advanced extension for Microsoft Dynamics 365 Business Central that enables real-time data capture from manufacturing operations. This application facilitates the automated recording of production order details, consumption tracking, manufacturing and labor times, as well as picking and storage processes. By integrating seamlessly with Business Central, MADCS empowers manufacturers to enhance operational visibility, improve data accuracy, and optimize production workflows. It is ideal for organizations seeking to digitize and automate their shop floor data collection processes while maintaining full control within their ERP environment.",
+  "privacyStatement": "https://businesscentral.dynamics.com",
+  "EULA": "https://businesscentral.dynamics.com",
+  "help": "https://businesscentral.dynamics.com",
+  "url": "https://businesscentral.dynamics.com",
+  "contextSensitiveHelpUrl": "https://businesscentral.dynamics.com",
+  "logo": ".\\res\\logo\\DAA.peq.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "idRanges": [
+    {
+      "from": 55000,
+      "to": 55999
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true,
+    "applyToDevExtension": true
+  },
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile", "GenerateCaptions"
+  ],
+  "supportedLocales": [
+    "es-ES", "es-ES_tradnl"
+  ],
+  "target": "OnPrem",
+  "platform": "25.2.0.0",
+  "application": "25.10.0.0",
+  "runtime": "14.0",
+  "preprocessorSymbols": [ "CLEAN25" ]
+}
