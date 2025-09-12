@@ -309,29 +309,17 @@
           <note from="Developer" annotates="general" priority="2">ESP="Salidas"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 332802016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the item number associated with the output.</source>
-          <target state="translated">Indica el número de artículo asociado con la salida.</target>
-          <note from="Developer" annotates="general" priority="2">ESP="Indica el número de artículo asociado con la salida."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control ItemNo - Property ToolTip</note>
+        <trans-unit id="Page 2476036101 - Control 400793991 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bin code where the output is stored.</source>
+          <target state="translated">Indica el código de ubicación donde se almacena la salida.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Indica el código de ubicación donde se almacena la salida."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Bin - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 332802016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item No.</source>
-          <target state="translated">Cód.Prod.</target>
-          <note from="Developer" annotates="general" priority="2">ESP="Cód.Prod."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control ItemNo - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 3523677570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the lot number associated with the output, if applicable.</source>
-          <target state="translated">Indica el número de lote asociado con la salida, si corresponde.</target>
-          <note from="Developer" annotates="general" priority="2">ESP="Indica el número de lote asociado con la salida, si corresponde."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control LotNo - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 3523677570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lot No.</source>
-          <target state="translated">Lote</target>
-          <note from="Developer" annotates="general" priority="2">ESP="Lote"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control LotNo - Property Caption</note>
+        <trans-unit id="Page 2476036101 - Control 400793991 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bin</source>
+          <target state="translated">Ubicación</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ubicación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Bin - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2476036101 - Control 4293406336 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the quantity of output produced.</source>
@@ -345,29 +333,17 @@
           <note from="Developer" annotates="general" priority="2">ESP="Cant."</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control OutputQuantity - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 2575590693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the quantity of scrap produced.</source>
-          <target state="translated">Indica la cantidad de desecho producida.</target>
-          <note from="Developer" annotates="general" priority="2">ESP="Indica la cantidad de desecho producida."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Scrap - Property ToolTip</note>
+        <trans-unit id="Page 2476036101 - Control 3523677570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the lot number associated with the output, if applicable.</source>
+          <target state="translated">Indica el número de lote asociado con la salida, si corresponde.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Indica el número de lote asociado con la salida, si corresponde."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control LotNo - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 2575590693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Scrap</source>
-          <target state="translated">C.Rechazo</target>
-          <note from="Developer" annotates="general" priority="2">ESP="C.Rechazo"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Scrap - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 400793991 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the bin code where the output is stored.</source>
-          <target state="translated">Indica el código de ubicación donde se almacena la salida.</target>
-          <note from="Developer" annotates="general" priority="2">ESP="Indica el código de ubicación donde se almacena la salida."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Bin - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2476036101 - Control 400793991 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bin</source>
-          <target state="translated">Ubicación</target>
-          <note from="Developer" annotates="general" priority="2">ESP="Ubicación"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Bin - Property Caption</note>
+        <trans-unit id="Page 2476036101 - Control 3523677570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot No.</source>
+          <target state="translated">Lote</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Lote"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control LotNo - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2476036101 - Control 2703996964 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the unit of measure for the output quantity.</source>
@@ -380,6 +356,36 @@
           <target state="translated">UM</target>
           <note from="Developer" annotates="general" priority="2">ESP="UM"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control UM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2476036101 - Control 332802016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item number associated with the output.</source>
+          <target state="translated">Indica el número de artículo asociado con la salida.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Indica el número de artículo asociado con la salida."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control ItemNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476036101 - Control 332802016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <target state="translated">Cód.Prod.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Cód.Prod."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control ItemNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2476036101 - Control 2575590693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity of scrap produced.</source>
+          <target state="translated">Indica la cantidad de desecho producida.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Indica la cantidad de desecho producida."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Scrap - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476036101 - Control 2575590693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Scrap</source>
+          <target state="translated">C.Rechazo</target>
+          <note from="Developer" annotates="general" priority="2">ESP="C.Rechazo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Scrap - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2476036101 - Control 673882855 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies blank separator.</source>
+          <target state="translated">Indica el separador en blanco.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Indica el separador en blanco."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page APA MADCS Outputs Part - Control Separator - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2476036101 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the description of the operation.</source>

@@ -67,6 +67,12 @@ page 55004 "APA MADCS Outputs Part"
                 {
                     ShowCaption = false;
 
+                    field(ItemNo; ProdOrderLine."Item No.")
+                    {
+                        Caption = 'Item No.', Comment = 'ESP="Cód.Prod."';
+                        ToolTip = 'Specifies the item number associated with the output.', Comment = 'ESP="Indica el número de artículo asociado con la salida."';
+                        Editable = false;
+                    }
 
                     grid(ColumnsRight)
                     {
@@ -74,40 +80,29 @@ page 55004 "APA MADCS Outputs Part"
                         {
                             ShowCaption = false;
 
-                            field(ItemNo; ProdOrderLine."Item No.")
-                            {
-                                Caption = 'Item No.', Comment = 'ESP="Cód.Prod."';
-                                ToolTip = 'Specifies the item number associated with the output.', Comment = 'ESP="Indica el número de artículo asociado con la salida."';
-                                Editable = false;
-                            }
-
                             field(OutputQuantity; OutputQuantity)
                             {
                                 Caption = 'Quan.', Comment = 'ESP="Cant."';
                                 ToolTip = 'Specifies the quantity of output produced.', Comment = 'ESP="Indica la cantidad de salida producida."';
+                                QuickEntry = true;
                             }
-
-                            field(LotNo; LotNo)
-                            {
-                                Caption = 'Lot No.', Comment = 'ESP="Lote"';
-                                ToolTip = 'Specifies the lot number associated with the output, if applicable.', Comment = 'ESP="Indica el número de lote asociado con la salida, si corresponde."';
-                            }
-
-                            field(Scrap; ScrapQuantity)
-                            {
-                                Caption = 'Scrap', Comment = 'ESP="C.Rechazo"';
-                                ToolTip = 'Specifies the quantity of scrap produced.', Comment = 'ESP="Indica la cantidad de desecho producida."';
-                            }
-                        }
-                        group(right)
-                        {
-                            ShowCaption = false;
 
                             field(Bin; ProdOrderLine."Bin Code")
                             {
                                 Caption = 'Bin', Comment = 'ESP="Ubicación"';
                                 ToolTip = 'Specifies the bin code where the output is stored.', Comment = 'ESP="Indica el código de ubicación donde se almacena la salida."';
                                 Editable = false;
+                            }
+                        }
+                        group(right)
+                        {
+                            ShowCaption = false;
+
+                            field(LotNo; LotNo)
+                            {
+                                Caption = 'Lot No.', Comment = 'ESP="Lote"';
+                                ToolTip = 'Specifies the lot number associated with the output, if applicable.', Comment = 'ESP="Indica el número de lote asociado con la salida, si corresponde."';
+                                QuickEntry = true;
                             }
 
                             field(UM; ProdOrderLine."Unit of Measure Code")
@@ -117,6 +112,18 @@ page 55004 "APA MADCS Outputs Part"
                                 Editable = false;
                             }
                         }
+                    }
+
+                    field(Separator; '')
+                    {
+                        Caption = '', Locked = true;
+                        ToolTip = 'Specifies blank separator.', Comment = 'ESP="Indica el separador en blanco."';
+                    }
+
+                    field(Scrap; ScrapQuantity)
+                    {
+                        Caption = 'Scrap', Comment = 'ESP="C.Rechazo"';
+                        ToolTip = 'Specifies the quantity of scrap produced.', Comment = 'ESP="Indica la cantidad de desecho producida."';
                     }
 
                     usercontrol(ALInfButtonGroup; "APA MADCS ButtonGroup")
