@@ -11,7 +11,14 @@
   "url": "https://businesscentral.dynamics.com",
   "contextSensitiveHelpUrl": "https://businesscentral.dynamics.com",
   "logo": ".\\res\\logo\\DAA.peq.jpg",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "41795fbc-8dcd-4f9b-8d01-532553051e04",
+      "publisher": "David Aparicio (APAWARE)",
+      "name": "DIANA CASADO MODIFICACIONES",
+      "version": "1.0.0.0"
+    }
+  ],
   "screenshots": [],
   "idRanges": [
     {

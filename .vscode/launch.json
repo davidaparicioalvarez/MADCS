@@ -9,7 +9,7 @@
             "server": "http://dianacasadobc25",
             "serverInstance": "BC",
             "authentication": "UserPassword",
-            "startupObjectId": 22,
+            "startupObjectId": 55000,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
