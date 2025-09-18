@@ -18,12 +18,13 @@ page 55001 "APA MADCS Main Card"
     {
         area(Content)
         {
-            group(Consumption)
+            group(Verification)
             {
-                Caption = 'Consumption', Comment = 'ESP="Consumo"';
-                Visible = bConsumption;
+                // TODO: V2. Implement the verification part in the future
+                Caption = 'Verificación', Comment = 'ESP="Verificación"';
+                Visible = bVerification;
 
-                part(ConsumptionPart; "APA MADCS Consumption Part")
+                part(VerificationPart; "APA MADCS Verification Part")
                 {
                     SubPageLink = Status = field(Status),
                                   "Prod. Order No." = field("Prod. Order No.");
@@ -35,6 +36,41 @@ page 55001 "APA MADCS Main Card"
                 Visible = bTime;
 
                 part(TimePart; "APA MADCS Time Part")
+                {
+                    SubPageLink = Status = field(Status),
+                                  "Prod. Order No." = field("Prod. Order No.");
+                }
+            }
+            group(Stops)
+            {
+                // TODO: V2. Implement the stops part in the future
+                Caption = 'Stops', Comment = 'ESP="Paradas"';
+                Visible = bStops;
+
+                part(StopsPart; "APA MADCS Stops Part")
+                {
+                    SubPageLink = Status = field(Status),
+                                  "Prod. Order No." = field("Prod. Order No.");
+                }
+            }
+            group(QualityMeasures)
+            {
+                // TODO: V2. Implement the quality measures part in the future
+                Caption = 'Quality Measures', Comment = 'ESP="Medidas de Calidad"';
+                Visible = bQualityMeasures;
+
+                part(QualityMeasuresPart; "APA MADCS Quality MeasuresPart")
+                {
+                    SubPageLink = Status = field(Status),
+                                  "Prod. Order No." = field("Prod. Order No.");
+                }
+            }
+            group(Consumption)
+            {
+                Caption = 'Consumption', Comment = 'ESP="Consumo"';
+                Visible = bConsumption;
+
+                part(ConsumptionPart; "APA MADCS Consumption Part")
                 {
                     SubPageLink = Status = field(Status),
                                   "Prod. Order No." = field("Prod. Order No.");
@@ -62,22 +98,22 @@ page 55001 "APA MADCS Main Card"
             {
                 Caption = 'Process', Comment = 'ESP="Proceso"';
 
-                action(ConsumptionAct)
+                action(VerificationAct)
                 {
-                    Caption = 'Consumption', Comment = 'ESP="Consumo"';
-                    ToolTip = 'Manage the consumption of components for the production order.', Comment = 'ESP="Gestiona el consumo de componentes para la orden de producción."';
-                    Image = ConsumptionJournal;
+                    Caption = 'Verifications', Comment = 'ESP="Verificaciones"';
+                    ToolTip = 'Manage verifications for the production order.', Comment = 'ESP="Gestiona las verificaciones para la orden de producción."';
+                    Image = CheckList;
                     Promoted = true;
                     PromotedOnly = true;
                     PromotedCategory = Process;
                     PromotedIsBig = true;
                     ApplicationArea = All;
+                    Visible = false; // TODO: V2. Temporarily hide until implemented
 
                     trigger OnAction()
                     begin
-                        bConsumption := true;
-                        bTime := false;
-                        bOutputs := false;
+                        // TODO: Do the job of showing the verification part
+                        SetVisibility(Enum::"APA MADCS Visibility Options"::Verifications);
                         CurrPage.Update();
                     end;
                 }
@@ -95,9 +131,65 @@ page 55001 "APA MADCS Main Card"
 
                     trigger OnAction()
                     begin
-                        bConsumption := false;
-                        bTime := true;
-                        bOutputs := false;
+                        SetVisibility(Enum::"APA MADCS Visibility Options"::Time);
+                        CurrPage.Update();
+                    end;
+                }
+
+                action(StopsAct)
+                {
+                    Caption = 'Stops', Comment = 'ESP="Paradas"';
+                    ToolTip = 'Manage stops for the production order.', Comment = 'ESP="Gestiona las paradas para la orden de producción."';
+                    Image = Stop;
+                    Promoted = true;
+                    PromotedOnly = true;
+                    PromotedCategory = Process;
+                    PromotedIsBig = true;
+                    ApplicationArea = All;
+                    Visible = false; // TODO: V2.Temporarily hide until implemented
+
+                    trigger OnAction()
+                    begin
+                        // TODO: Do the job of showing the stops part
+                        SetVisibility(Enum::"APA MADCS Visibility Options"::Stops);
+                        CurrPage.Update();
+                    end;
+                }
+
+                action(QualityMeasuresAct)
+                {
+                    Caption = 'Quality Measures', Comment = 'ESP="Medidas de Calidad"';
+                    ToolTip = 'Manage quality measures for the production order.', Comment = 'ESP="Gestiona las medidas de calidad para la orden de producción."';
+                    Image = Questionaire;
+                    Promoted = true;
+                    PromotedOnly = true;
+                    PromotedCategory = Process;
+                    PromotedIsBig = true;
+                    ApplicationArea = All;
+                    Visible = false; // TODO: V2. Temporarily hide until implemented
+
+                    trigger OnAction()
+                    begin
+                        // TODO: Do the job of showing the quality measures part
+                        SetVisibility(Enum::"APA MADCS Visibility Options"::"Quality Measures");
+                        CurrPage.Update();
+                    end;
+                }
+
+                action(ConsumptionAct)
+                {
+                    Caption = 'Consumption', Comment = 'ESP="Consumo"';
+                    ToolTip = 'Manage the consumption of components for the production order.', Comment = 'ESP="Gestiona el consumo de componentes para la orden de producción."';
+                    Image = ConsumptionJournal;
+                    Promoted = true;
+                    PromotedOnly = true;
+                    PromotedCategory = Process;
+                    PromotedIsBig = true;
+                    ApplicationArea = All;
+
+                    trigger OnAction()
+                    begin
+                        SetVisibility(Enum::"APA MADCS Visibility Options"::Consumptions);
                         CurrPage.Update();
                     end;
                 }
@@ -115,9 +207,7 @@ page 55001 "APA MADCS Main Card"
 
                     trigger OnAction()
                     begin
-                        bConsumption := false;
-                        bTime := false;
-                        bOutputs := true;
+                        SetVisibility(Enum::"APA MADCS Visibility Options"::Outputs);
                         CurrPage.Update();
                     end;
                 }
@@ -130,9 +220,7 @@ page 55001 "APA MADCS Main Card"
         APAMADCSPostingManagement: Codeunit "APA MADCS Posting Management";
     begin
         APAMADCSPostingManagement.LogAction(Rec, true);
-        bConsumption := true;
-        bTime := false;
-        bOutputs := false;
+        InitVisibility();
     end;
 
     trigger OnClosePage()
@@ -143,7 +231,30 @@ page 55001 "APA MADCS Main Card"
     end;
 
     var
+        bVerification: Boolean;
         bConsumption: Boolean;
         bTime: Boolean;
         bOutputs: Boolean;
+        bQualityMeasures: Boolean;
+        bStops: Boolean;
+
+    local procedure SetVisibility(optType: Enum "APA MADCS Visibility Options")
+    begin
+        bVerification := optType = Enum::"APA MADCS Visibility Options"::Verifications;
+        bTime := optType = Enum::"APA MADCS Visibility Options"::Time;
+        bStops := optType = Enum::"APA MADCS Visibility Options"::Stops;
+        bQualityMeasures := optType = Enum::"APA MADCS Visibility Options"::"Quality Measures";
+        bConsumption := optType = Enum::"APA MADCS Visibility Options"::Consumptions;
+        bOutputs := optType = Enum::"APA MADCS Visibility Options"::Outputs;
+    end;
+
+    local procedure InitVisibility()
+    begin
+        bVerification := false;
+        bTime := true;
+        bStops := false;
+        bQualityMeasures := false;
+        bConsumption := false;
+        bOutputs := false;
+    end;
 }

@@ -1,4 +1,4 @@
-page 55100 "APA MADCS Lot No. Information"
+page 55005 "APA MADCS Lot No. Information"
 {
     ApplicationArea = All;
     Caption = 'Lot No. Information', Comment = 'ESP="Información del números de lote"';

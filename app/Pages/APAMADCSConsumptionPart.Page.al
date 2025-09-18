@@ -156,7 +156,6 @@ page 55002 "APA MADCS Consumption Part"
                         trigger OnLoad()
                         begin
                             CurrPage.ALButtonGroup.AddButton('+Inc. Cant.', 'Incrementar Cantidad', 'ALButtonMoreQuantity', 'danger');
-                            CurrPage.ALButtonGroup.AddButton('Cancelar', 'Cancelar', 'ALButtonCancel', 'normal');
                             CurrPage.ALButtonGroup.AddButton('Registrar', 'Registrar', 'ALButtonPost', 'primary');
                         end;
 

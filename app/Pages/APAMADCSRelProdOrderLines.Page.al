@@ -10,7 +10,8 @@ page 55000 "APA MADCS Rel Prod Order Lines"
     ApplicationArea = All;
     UsageCategory = Lists;
     Editable = false;
-    SourceTableView = where(Status = const(Released));
+    SourceTableView = where(Status = const(Released),
+                            "Orden Preparacion" = filter(<>0));
 
     // TODO: Add filtering to show only orders assigned to a user or to a work center
 
@@ -20,9 +21,13 @@ page 55000 "APA MADCS Rel Prod Order Lines"
         {
             repeater(Group)
             {
-                field(Priority; Rec.Priority)
+                field("Orden Preparacion"; Rec."Orden Preparacion")
                 {
-                    ToolTip = 'Specifies the priority of the production order.', Comment = 'ESP="Especifica la prioridad de la orden de producción."';
+                    ToolTip = 'Specifies the preparation order associated with the production order.', Comment = 'ESP="Especifica el orden de preparación asociado con la orden de producción."';
+                }
+                field("Agrupacion Centros";Rec."Agrupacion Centros")
+                {
+                    ToolTip = 'Specifies the work center group associated with the production order.', Comment = 'ESP="Especifica el grupo de centros de trabajo asociado con la orden de producción."';
                 }
                 field("Prod. Order No."; Rec."Prod. Order No.")
                 {
@@ -42,19 +47,21 @@ page 55000 "APA MADCS Rel Prod Order Lines"
                 }
                 field("Finished Quantity"; Rec."Finished Quantity")
                 {
+                    Visible = false;
                     ToolTip = 'Specifies the finished quantity of the item.', Comment = 'ESP="Especifica la cantidad terminada del producto."';
                 }
                 field("Starting Date-Time"; Rec."Starting Date-Time")
                 {
+                    Visible = false;
                     ToolTip = 'Specifies the starting date and time for the production order.', Comment = 'ESP="Especifica la fecha y hora de inicio de la orden de producción."';
                 }
                 field("Ending Date-Time"; Rec."Ending Date-Time")
                 {
+                    Visible = false;
                     ToolTip = 'Specifies the ending date and time for the production order.', Comment = 'ESP="Especifica la fecha y hora de finalización de la orden de producción."';
                 }
                 field("APA MADCS User Working"; Rec."APA MADCS User Working")
                 {
-                    Editable = false;
                     Visible = false;
                     ToolTip = 'Specifies the user currently working with this production order.', Comment = 'ESP="Especifica el usuario que está trabajando con esta orden de producción."';
                 }

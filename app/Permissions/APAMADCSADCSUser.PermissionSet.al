@@ -10,6 +10,7 @@ permissionset 55000 "APA MADCS ADCS User"
         tabledata "Production Order" = R,
         tabledata "Prod. Order Component" = RIMD,
         tabledata "Item Journal Line" = RIMD,
+        tabledata "APA MADCS Pro. Order Line Time" = RIMD,
         table "APA MADCS User Log" = X,
         codeunit "APA MADCS Posting Management" = X,
         page "APA MADCS Rel Prod Order Lines" = X,
@@ -17,5 +18,8 @@ permissionset 55000 "APA MADCS ADCS User"
         page "APA MADCS Consumption Part" = X,
         page "APA MADCS Outputs Part" = X,
         page "APA MADCS Time Part" = X,
-        page "APA MADCS Lot No. Information" = X;
+        page "APA MADCS Lot No. Information" = X,
+        page "APA MADCS Verification Part" = X,
+        page "APA MADCS Stops Part" = X,
+        page "APA MADCS Quality MeasuresPart" = X;
 }

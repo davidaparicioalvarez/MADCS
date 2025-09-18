@@ -132,7 +132,6 @@ page 55004 "APA MADCS Outputs Part"
 
                         trigger OnLoad()
                         begin
-                            CurrPage.ALInfButtonGroup.AddButton('Cancelar', 'Salir de la ventana', 'ALButtonCancel', 'normal');
                             CurrPage.ALInfButtonGroup.AddButton('Registrar', 'Iniciar tiempo', 'ALButtonPost', 'primary');
                         end;
 
